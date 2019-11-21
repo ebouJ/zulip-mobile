@@ -3,6 +3,18 @@ package com.zulipmobile;
 import android.app.Application;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.facebook.react.ReactApplication;
+import com.reactnativecommunity.webview.RNCWebViewPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.nikolaiwarner.RNTextInputReset.RNTextInputResetPackage;
+import com.zmxv.RNSound.RNSoundPackage;
+import io.sentry.RNSentryPackage;
+import com.reactnative.photoview.PhotoViewPackage;
+import com.github.yamill.orientation.OrientationPackage;
+import com.wix.reactnativenotifications.RNNotificationsPackage;
+import com.imagepicker.ImagePickerPackage;
+import com.RNFetchBlob.RNFetchBlobPackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import com.remobile.toast.RCTToastPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -37,6 +49,18 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.asList(
                     new MainReactPackage(),
+            new RNCWebViewPackage(),
+            new VectorIconsPackage(),
+            new RNTextInputResetPackage(),
+            new RNSoundPackage(),
+            new RNSentryPackage(MainApplication.this),
+            new PhotoViewPackage(),
+            new OrientationPackage(),
+            new RNNotificationsPackage(),
+            new ImagePickerPackage(),
+            new RNFetchBlobPackage(),
+            new RNDeviceInfo(),
+            new RCTToastPackage(),
                     new RNCWebViewPackage(),
                     new RNTextInputResetPackage(),
                     new ImagePickerPackage(),
